@@ -1,0 +1,156 @@
+.container {
+    background-color: #232323;
+    margin-top: 150px;
+    margin-bottom: 0;
+    color: rgb(179, 173, 173);
+}
+.app {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.main {
+    background-color: transparent;
+    width: 100%;
+    margin-left: 90px;
+    border-radius: 25px 0px 0px 0px;
+}
+
+.main #appName {
+    padding-left: 5px;
+    text-decoration: underline;
+}
+
+#tempDeg {
+    font-size: 45px;
+}
+
+#townName {
+    margin-bottom: 0;
+    font-size: 45px;
+    padding-bottom: 0;
+    margin-left: 10px;
+}
+
+#tempIcon {
+    font-size: xx-large;
+}
+
+#condition {
+    padding-left: 20px;
+    font-size: 30px;
+}
+
+.tempInfo {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding-left: 25px;
+}
+
+.townDetails {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.weatherInfo {
+    background-color: rgba(6, 3, 49, 0.938);
+    width: 100%;
+    background: rgba(110, 110, 110, 0.25);
+    margin-right: 90px;
+    border-radius: 0px 25px 25px 0px;
+}
+
+.cityInput {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.search {
+    width: 90%;
+    height: 35px;
+    border: none;
+    border-top: 1px #ccc solid;
+    background-color: transparent;
+    outline: none;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    padding: 4px 8px;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.search:focus {
+    outline: none;
+    background-color: transparent;
+}
+img {
+    width: 60px;
+    height: 50px;
+    margin-left: 5px;
+}
+
+#description {
+    margin-left: 15px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.search::placeholder {
+    color: rgb(117, 116, 116);
+    padding-left: 4px;
+}
+
+.submit {
+    width: 10%;
+    font-size: large;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    color: whitesmoke;
+}
+
+.submit:hover{
+    background-color: darkgrey;
+    transition: 0.2s ease-in-out;
+    color: #232323;
+}
+
+
+.weatherInfo {
+    padding: 2em 1em;
+}
+
+.details li {
+    margin: 2em 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px beige solid;
+    padding-right: 10px;
+}
+
+#error {
+    font-family: sans-serif;
+    font-size: larger;
+    margin-left: 2px;
+    text-align: center;
+}
+.hidden {
+    display: none;
+}
+
+.visible {
+    display: block;
+}
+
+#clouds, .winds, .humid {
+    font-size: 18px;
+}

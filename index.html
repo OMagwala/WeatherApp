@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width==device-width", initial-scale="1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/612181c53f.js" crossorigin="anonymous"></script>
+    <title>Weather App</title>
+</head>
+<body class="container">
+    <div class="app">
+        <div class="main">
+            <h3 id="appName">Weather Forecast</h3>
+            <article class="townDetails visible">
+                <h2 id="townName"></h2>
+                <div class="tempInfo">
+                    <h2 id="tempDeg"></h2>
+                    <h5 id="condition"></h5>
+                    <p id="description"></p>
+                </div>
+            </article>
+            <p id="error" class="hidden">Enter a valid location</p>
+            <div class="cityInput">
+                <input id="searchField" type="text" class="search" placeholder="Search Location..."/>
+                <button type="submit" class="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+        </div>
+        <div class="weatherInfo visible">
+            <ul class="details">
+                <h2>Weather Conditions</h2>
+                <li id="clouds">
+                    <span><i class="fa-solid fa-cloud"></i> Cloud Cover</span>
+                    <span id="cover"></span>
+                </li>
+                <li class="winds">
+                    <span><i class="fa-solid fa-wind"></i> Wind Speed</span>
+                    <span id="speed"></span>
+                </li>
+                <li class="humid">
+                    <span><i class="fa-solid fa-droplet"></i> Humidity</span>
+                    <span id="humi"></span>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
